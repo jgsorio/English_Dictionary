@@ -19,6 +19,6 @@ def word_test(word):
 
 
 while answer != '':
-    for result in word_test(answer):
-        print(result)
+    for (indice, result) in enumerate(word_test(answer)):
+        print(f'{indice} - {result}')
     answer = input('What word do you wanna search? ')
