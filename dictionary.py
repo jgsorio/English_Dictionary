@@ -15,7 +15,7 @@ def word_test(word):
     elif word.capitalize() in dados:
         return dados[word.capitalize()]
     else:
-        return 'The search returned no results'
+        return ['The search returned no results']
 
 
 while answer != '':
