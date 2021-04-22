@@ -9,6 +9,6 @@ while answer != '':
         for result in dados[answer]:
             print(result)
     except:
-        print('The search not return results')
+        print('The search returned no results')
     answer = input('What word do you wanna search? ')
 
