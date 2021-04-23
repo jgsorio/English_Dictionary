@@ -19,7 +19,6 @@ def word_test(word):
         return False
 
 
-
 '''
 Método que retorna com 80% de assertividade as palavras similares
 dentro do dicionario, caso o cliente digite algo errado
@@ -42,6 +41,7 @@ def filter_word(word):
         print('No results found!')
         answer = input('What word do you wanna search? ')
         return filter_word(answer)
+
 
 while answer != '':
     word = filter_word(answer)
