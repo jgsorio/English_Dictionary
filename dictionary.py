@@ -36,6 +36,8 @@ def filter_word(word):
         else:
             answer = input('What word do you wanna search? ')
             return filter_word(answer)
+    elif len(matches) == 1:
+        return str(matches[0])
     else:
         print('No results found!')
         answer = input('What word do you wanna search? ')
