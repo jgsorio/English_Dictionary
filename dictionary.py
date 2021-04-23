@@ -34,9 +34,12 @@ def filter_word(word):
         if question.lower() == 'y':
             return str(matches[0])
         else:
-            return False
+            answer = input('What word do you wanna search? ')
+            return filter_word(answer)
     else:
-        return False
+        print('No results found!')
+        answer = input('What word do you wanna search? ')
+        return filter_word(answer)
 
 while answer != '':
     word = filter_word(answer)
