@@ -36,11 +36,13 @@ def filter_word(word):
         else:
             return False
     else:
-        return str(matches[0])
+        return False
 
 while answer != '':
     word = filter_word(answer)
     if type(word) != bool:
         for (indice, result) in enumerate(word_test(word)):
             print(f'{indice} - {result}')
+    else:
+        print('No results found!')
     answer = input('What word do you wanna search? ')
